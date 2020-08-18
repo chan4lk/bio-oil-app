@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "projects": {
+    "bio-oil": {
+      "projectType": "application",
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/bio-oil",
+      "sourceRoot": "apps/bio-oil/src",
+      "prefix": "bio-oil",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/bio-oil",
+            "index": "apps/bio-oil/src/index.html",
+            "main": "apps/bio-oil/src/main.ts",
+            "polyfills": "apps/bio-oil/src/polyfills.ts",
+            "tsConfig": "apps/bio-oil/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/bio-oil/src/favicon.ico",
+              "apps/bio-oil/src/assets"
+            ],
+            "styles": ["apps/bio-oil/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/bio-oil/src/environments/environment.ts",
+                  "with": "apps/bio-oil/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "bio-oil:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "bio-oil:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "bio-oil:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/bio-oil/tsconfig.app.json",
+              "apps/bio-oil/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/bio-oil/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/bio-oil/jest.config.js",
+            "tsConfig": "apps/bio-oil/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "apps/bio-oil/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "bio-oil-e2e": {
+      "root": "apps/bio-oil-e2e",
+      "sourceRoot": "apps/bio-oil-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/bio-oil-e2e/cypress.json",
+            "tsConfig": "apps/bio-oil-e2e/tsconfig.e2e.json",
+            "devServerTarget": "bio-oil:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "bio-oil:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/bio-oil-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/bio-oil-e2e/**/*"]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  },
+  "schematics": {
+    "@nrwl/workspace": {
+      "library": {
+        "linter": "tslint"
+      }
+    },
+    "@nrwl/cypress": {
+      "cypress-project": {
+        "linter": "tslint"
+      }
+    },
+    "@nrwl/node": {
+      "application": {
+        "linter": "tslint"
+      },
+      "library": {
+        "linter": "tslint"
+      }
+    },
+    "@nrwl/nest": {
+      "application": {
+        "linter": "tslint"
+      },
+      "library": {
+        "linter": "tslint"
+      }
+    },
+    "@nrwl/express": {
+      "application": {
+        "linter": "tslint"
+      },
+      "library": {
+        "linter": "tslint"
+      }
+    },
+    "@nrwl/angular:application": {
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "jest"
+    }
+  },
+  "defaultProject": "bio-oil"
+}
