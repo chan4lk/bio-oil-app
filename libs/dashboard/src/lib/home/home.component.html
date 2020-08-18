@@ -8,8 +8,13 @@
         >English</span
       >
     </div>
-    <form action="/en/switch_locale" accept-charset="UTF-8" method="post">
-      <select name="language_selector" id="language_selector" class="auto_post">
+    <form accept-charset="UTF-8">
+      <select
+        (change)="changed($event)"
+        name="language_selector"
+        id="language_selector"
+        class="auto_post"
+      >
         <option selected="selected" value="en">English</option>
         <option value="si">සිංහල</option>
         <option value="ta">தமிழ்</option>

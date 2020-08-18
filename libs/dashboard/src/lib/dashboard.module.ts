@@ -7,7 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   imports: [
     CommonModule,
-    TranslateModule.forChild({}),
+    TranslateModule,
     RouterModule.forChild([
       { path: '', pathMatch: 'full', component: HomeComponent },
     ]),

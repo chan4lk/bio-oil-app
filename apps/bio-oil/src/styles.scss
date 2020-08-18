@@ -11,6 +11,12 @@ h1,
 h2 {
   margin: 20px 0;
 }
+.super {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.3em;
+  font-size: 0.8em;
+}
 .bo-layout--container {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
