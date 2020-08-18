@@ -1,4 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/fonts';
+
 * {
   box-sizing: border-box;
+}
+body {
+  color: #ff5404;
+}
+h1,
+h2 {
+  margin: 20px 0;
+}
+.bo-layout--container {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bo-layout {
+  margin: 60px;
+}
+
+.bo-layout--section {
+  border-bottom: #ff5404 solid 2px;
+  position: relative;
+}
+.bo-layout--section img.logo {
+  width: 180px;
+}
+.bo-layout--section--language-selector {
+  position: absolute;
+  top: 0;
+}
+.bo-layout--section--language-selector.ltr {
+  right: 0;
+}
+.bo-layout--section--language-selector select {
+  padding: 10px 20px;
+  width: auto;
+  font-size: 16px;
+  color: #ff5404;
+  border-radius: 0;
+  border: solid 1px #ff5404;
+  background-color: white;
+  cursor: pointer;
+  margin-bottom: 5px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
 }
