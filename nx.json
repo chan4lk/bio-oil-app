@@ -28,6 +28,9 @@
     "bio-oil-e2e": {
       "tags": [],
       "implicitDependencies": ["bio-oil"]
+    },
+    "dashboard": {
+      "tags": ["dashboard"]
     }
   }
 }
