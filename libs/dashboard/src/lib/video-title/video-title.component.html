@@ -1,0 +1,30 @@
+<h2>
+  <a href="#" class="video_play">
+    <span [innerHTML]="title | translate"></span>
+    <img
+      class="video_play"
+      src="assets/images/circled-play-100.ltr.png"
+      (click)="visible = true"
+    />
+  </a>
+
+  <div class="video_container" *ngIf="visible">
+    <div class="video_container--background">
+      <video
+        controls=""
+        preload="metadata"
+        class="video_container--video"
+        [attr.poster]="poster"
+      >
+        <source [attr.src]="source" type="video/mp4" />
+      </video>
+      <a class="video_close" href="#">
+        <img
+          class="video_close"
+          src="assets/images/close-24px-white.svg"
+          (click)="visible = false"
+        />
+      </a>
+    </div>
+  </div>
+</h2>

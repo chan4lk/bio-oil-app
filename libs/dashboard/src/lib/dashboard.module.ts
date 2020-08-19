@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SectionComponent } from './section/section.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { VideoTitleComponent } from './video-title/video-title.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -12,6 +13,6 @@ import { TranslateModule } from '@ngx-translate/core';
       { path: '', pathMatch: 'full', component: HomeComponent },
     ]),
   ],
-  declarations: [HomeComponent, SectionComponent],
+  declarations: [HomeComponent, SectionComponent, VideoTitleComponent],
 })
 export class DashboardModule {}

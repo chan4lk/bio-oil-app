@@ -1,5 +1,11 @@
 <div class="bo-layout--section">
-  <h1 dir="ltr" [innerHTML]="title | translate"></h1>
+  <h2 *ngIf="!source" dir="ltr" [innerHTML]="title | translate"></h2>
+  <db-video-title
+    *ngIf="source"
+    [title]="title"
+    [poster]="poster"
+    [source]="source"
+  ></db-video-title>
   <div style="clear: both;"></div>
   <p [innerHTML]="content | translate"></p>
 </div>

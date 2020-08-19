@@ -1,23 +1,25 @@
 import {
   Component,
+  Input,
   OnInit,
   ViewEncapsulation,
   ChangeDetectionStrategy,
-  Input,
 } from '@angular/core';
 
 @Component({
-  selector: 'db-section',
-  templateUrl: './section.component.html',
-  styleUrls: ['./section.component.scss'],
+  selector: 'db-video-title',
+  templateUrl: './video-title.component.html',
+  styleUrls: ['./video-title.component.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SectionComponent implements OnInit {
-  @Input() title = '';
-  @Input() content = '';
+export class VideoTitleComponent implements OnInit {
   @Input() poster = '';
   @Input() source = '';
+  @Input() title = '';
+
+  visible = false;
+
   constructor() {}
 
   ngOnInit(): void {}
