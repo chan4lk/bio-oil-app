@@ -36,4 +36,8 @@ testem.log
 
 # System Files
 .DS_Store
+
+# design
+/design
+
 Thumbs.db
