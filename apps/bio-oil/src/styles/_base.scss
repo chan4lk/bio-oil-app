@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: $primaryColor;
+  line-height: 30.8px;
+  font-family: $RegularFontName;
+  background: $backgroundColor;
+}
+h1,
+h2 {
+  font-family: $BoldFontName;
+  font-size: 20px;
+  margin: 20px 0;
+}
+a {
+  color: $primaryColor;
+  text-decoration: none;
+}
+p {
+  text-align: justify;
+  text-justify: auto;
+}
+.super {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.3em;
+  font-size: 0.8em;
+}
+.bo-layout--container {
+  width: 100%;
+  font-family: $RegularFontName;
+  font-size: 18px;
+}
+
+.bo-layout {
+  margin: 23px;
+}

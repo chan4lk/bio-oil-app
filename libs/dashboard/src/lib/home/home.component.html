@@ -1,38 +1,12 @@
+<nav class="nav">
+  <i class="fa fa-bars" aria-hidden="true"></i>
+  <ul class="nav-items">
+    <li class="nav-item">Home</li>
+    <li class="nav-item">Order</li>
+    <li class="nav-item">Contact Us</li>
+  </ul>
+  <img src="assets/images/Bio-Oil_logo.svg" alt="logo" class="logo" />
+</nav>
 <div class="bo-layout--section">
-  <p class="bo-layout--logo-holder">
-    <img class="logo" src="assets/images/Bio-Oil_logo.svg" />
-  </p>
-  <div class="bo-layout--section--language-selector ltr font-group-1">
-    <div style="position: fixed; visibility: hidden; top: 0; left: 0;">
-      <span id="language_selector_sizer" style="visibility: hidden;"
-        >English</span
-      >
-    </div>
-    <form accept-charset="UTF-8">
-      <select
-        (change)="changed($event)"
-        name="language_selector"
-        id="language_selector"
-        class="auto_post"
-      >
-        <option selected="selected" value="en">English</option>
-        <option value="si">සිංහල</option>
-        <option value="ta">தமிழ்</option>
-      </select>
-    </form>
-  </div>
+  <img class="banner" src="assets/images/Banner.svg" alt="" />
 </div>
-<db-section
-  [title]="'SECTION_1.TITLE'"
-  [content]="'SECTION_1.CONTENT'"
-></db-section>
-<db-section
-  [title]="'SECTION_2.TITLE'"
-  [content]="'SECTION_2.CONTENT'"
-  [poster]="
-    'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_poster_en.png'
-  "
-  [source]="
-    'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_1080p.mp4'
-  "
-></db-section>
