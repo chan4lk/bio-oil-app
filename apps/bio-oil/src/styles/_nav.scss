@@ -1,20 +1,39 @@
 .nav {
   position: relative;
-  height: 120px;
+  height: 80px;
   margin: 4px;
-  i {
-    font-size: 60px;
-    margin-top: 20px;
-    color: $primaryColor;
-    opacity: 0.7;
+  background: $navBackgroudColor;
+  #nav-toggle span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #000;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  #nav-toggle span:before {
+    top: -10px;
+  }
+  #nav-toggle span:after {
+    bottom: -10px;
   }
   .nav-items {
     display: none;
   }
 
   .logo {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     position: absolute;
     top: 0;
     right: 0;

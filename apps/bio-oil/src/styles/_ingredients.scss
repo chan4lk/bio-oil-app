@@ -1,0 +1,35 @@
+.ingredients {
+  background: $backgroundColor;
+  display: flex;
+  .bottle {
+    height: 40vh;
+    flex: 1;
+  }
+  .ingredients-items {
+    flex: 1;
+    h1 {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 1.2rem;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        font-size: 12px;
+        line-height: 1.2rem;
+        margin-left: 15px;
+      }
+    }
+
+    ul li::before {
+      content: '\2022';
+      color: $accentColor;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}

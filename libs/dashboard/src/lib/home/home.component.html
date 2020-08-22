@@ -1,5 +1,5 @@
 <nav class="nav">
-  <i class="fa fa-bars" aria-hidden="true"></i>
+  <a id="nav-toggle" href="#"><span></span></a>
   <ul class="nav-items">
     <li class="nav-item">Home</li>
     <li class="nav-item">Order</li>
@@ -7,6 +7,29 @@
   </ul>
   <img src="assets/images/Bio-Oil_logo.svg" alt="logo" class="logo" />
 </nav>
-<div class="bo-layout--section">
+<div class="bo-layout--section banner">
   <img class="banner" src="assets/images/Banner.svg" alt="" />
+</div>
+<div class="bo-layout--section ingredients">
+  <img class="bottle" src="assets/images/Bottle.svg" alt="" />
+  <div class="ingredients-items">
+    <h1>{{ 'INGREDIENTS.TITLE' | translate }}</h1>
+    <ul>
+      <li>{{ 'INGREDIENTS.INGREDIENT_1' | translate }}</li>
+      <li>{{ 'INGREDIENTS.INGREDIENT_2' | translate }}</li>
+      <li>{{ 'INGREDIENTS.INGREDIENT_3' | translate }}</li>
+      <li>{{ 'INGREDIENTS.INGREDIENT_4' | translate }}</li>
+      <li>{{ 'INGREDIENTS.INGREDIENT_5' | translate }}</li>
+      <li>{{ 'INGREDIENTS.INGREDIENT_6' | translate }}</li>
+      <li>{{ 'INGREDIENTS.INGREDIENT_7' | translate }}</li>
+    </ul>
+  </div>
+</div>
+<div class="bo-layout--section features">
+  <div class="feature-card">
+    <img class="logo" src="assets/images/Flame.svg" alt="" />
+    <div class="title">{{ 'FEATURES.TITLE' | translate | uppercase }}</div>
+    <div class="content">{{ 'FEATURES.CONTENT' | translate }}</div>
+    <img class="btn-play" src="assets/images/Play.svg" alt="" />
+  </div>
 </div>
