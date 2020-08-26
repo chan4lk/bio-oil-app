@@ -1,6 +1,6 @@
 
 <div class="bo-layout--section banner">
-  <img class="banner" src="assets/images/Banner.svg" alt="" />
+  <img class="img-banner" src="assets/images/Banner.svg" alt="" />
 </div>
 <div class="bo-layout--section ingredients">
   <div class="bottle-section">
@@ -30,10 +30,9 @@
   </div>
 </div>
 <div class="bo-layout--section features">
-  <div class="feature-card">
-    <img class="logo" src="assets/images/Flame.svg" alt="" />
-    <div class="title">{{ 'FEATURES.TITLE' | translate | uppercase }}</div>
-    <div class="content">{{ 'FEATURES.CONTENT' | translate }}</div>
-    <img class="btn-play" src="assets/images/Play.svg" alt="" />
-  </div>
+  <db-video-title
+    [title]="'FEATURES.TITLE'"
+    [content]="'FEATURES.CONTENT'"
+  >
+  </db-video-title>
 </div>

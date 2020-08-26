@@ -17,6 +17,7 @@ export class VideoTitleComponent implements OnInit {
   @Input() poster = '';
   @Input() source = '';
   @Input() title = '';
+  @Input() content = '';
 
   visible = false;
 

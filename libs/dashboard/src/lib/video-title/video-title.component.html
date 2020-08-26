@@ -1,12 +1,11 @@
 <h2>
-  <a href="#" class="video_play">
-    <span [innerHTML]="title | translate"></span>
-    <img
-      class="video_play"
-      src="assets/images/circled-play-100.ltr.png"
-      (click)="visible = true"
-    />
-  </a>
+
+  <div class="feature-card">
+    <img class="logo" src="assets/images/Flame.svg" alt="" />
+    <div class="title">{{ title | translate | uppercase }}</div>
+    <div class="content">{{ content | translate }}</div>
+    <img class="btn-play" src="assets/images/Play.svg" alt="" (click)="visible = true" />
+  </div>
 
   <div class="video_container" *ngIf="visible">
     <div class="video_container--background">
