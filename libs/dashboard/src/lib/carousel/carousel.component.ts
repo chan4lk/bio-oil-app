@@ -16,16 +16,16 @@ export class CarouselComponent implements OnInit {
   constructor() { }
 
   slides = [
-    {title: 'FEATURES.TITLE_1', content: 'FEATURES.CONTENT_1'},
-    {title: 'FEATURES.TITLE_2', content: 'FEATURES.CONTENT_2'},
-    {title: 'FEATURES.TITLE_3', content: 'FEATURES.CONTENT_3'},
-    {title: 'FEATURES.TITLE_4', content: 'FEATURES.CONTENT_4'},
-    {title: 'FEATURES.TITLE_5', content: 'FEATURES.CONTENT_5'},
-    {title: 'FEATURES.TITLE_6', content: 'FEATURES.CONTENT_6'},
-    {title: 'FEATURES.TITLE_7', content: 'FEATURES.CONTENT_7'},
-    {title: 'FEATURES.TITLE_8', content: 'FEATURES.CONTENT_8'},
-    {title: 'FEATURES.TITLE_9', content: 'FEATURES.CONTENT_9'},
-    {title: 'FEATURES.TITLE_10', content: 'FEATURES.CONTENT_10'},
+    {title: 'FEATURES.TITLE_1', content: 'FEATURES.CONTENT_1', url: 'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_1080p.mp4'},
+    {title: 'FEATURES.TITLE_2', content: 'FEATURES.CONTENT_2', url: 'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_1080p.mp4'},
+    {title: 'FEATURES.TITLE_3', content: 'FEATURES.CONTENT_3', url: 'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_1080p.mp4'},
+    {title: 'FEATURES.TITLE_4', content: 'FEATURES.CONTENT_4', url: 'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_1080p.mp4'},
+    {title: 'FEATURES.TITLE_5', content: 'FEATURES.CONTENT_5', url: 'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_1080p.mp4'},
+    {title: 'FEATURES.TITLE_6', content: 'FEATURES.CONTENT_6', url: 'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_1080p.mp4'},
+    {title: 'FEATURES.TITLE_7', content: 'FEATURES.CONTENT_7', url: 'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_1080p.mp4'},
+    {title: 'FEATURES.TITLE_8', content: 'FEATURES.CONTENT_8', url: 'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_1080p.mp4'},
+    {title: 'FEATURES.TITLE_9', content: 'FEATURES.CONTENT_9', url: 'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_1080p.mp4'},
+    {title: 'FEATURES.TITLE_10', content: 'FEATURES.CONTENT_10', url: 'https://assets.bio-oil.com/Website/Skincare_research_and_development_v5_1080p.mp4'},
   ];
   slideConfig = {
     "slidesToShow": 1,
@@ -39,7 +39,7 @@ export class CarouselComponent implements OnInit {
   }
 
   addSlide() {
-    this.slides.push({title: 'FEATURES.TITLE_1', content: 'FEATURES.CONTENT_1'});
+
   }
 
   removeSlide() {

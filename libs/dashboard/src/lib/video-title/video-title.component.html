@@ -1,29 +1,6 @@
-<h2>
-
   <div class="feature-card">
     <img class="logo" src="assets/images/Flame.svg" alt="" />
     <div class="title" [innerHTML]="title | translate| uppercase"></div>
     <div class="content" [innerHTML]="content | translate"></div>
-    <img class="btn-play" src="assets/images/Play.svg" alt="" (click)="visible = true" />
+    <img class="btn-play" src="assets/images/Play.svg" alt="" (click)="play()" />
   </div>
-
-  <div class="video_container" *ngIf="visible">
-    <div class="video_container--background">
-      <video
-        controls=""
-        preload="metadata"
-        class="video_container--video"
-        [attr.poster]="poster"
-      >
-        <source [attr.src]="source" type="video/mp4" />
-      </video>
-      <a class="video_close" href="#">
-        <img
-          class="video_close"
-          src="assets/images/close-24px-white.svg"
-          (click)="visible = false"
-        />
-      </a>
-    </div>
-  </div>
-</h2>

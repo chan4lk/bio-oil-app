@@ -3,8 +3,9 @@ import {
   Input,
   OnInit,
   ViewEncapsulation,
-  ChangeDetectionStrategy,
+  ChangeDetectionStrategy, Output, EventEmitter,
 } from '@angular/core';
+import {VideoService} from "../services/video.service";
 
 @Component({
   selector: 'db-video-title',
@@ -19,9 +20,21 @@ export class VideoTitleComponent implements OnInit {
   @Input() title = '';
   @Input() content = '';
 
-  visible = false;
+  @Output() video_clicked = new EventEmitter();
+  @Output() video_closed = new EventEmitter();
 
-  constructor() {}
+  constructor(private service: VideoService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.service.videoSource$.subscribe(url => {
+      if(url === ''){
+        this.video_closed.emit();
+      }
+    })
+  }
+
+  play(){
+    this.video_clicked.emit()
+    this.service.setVideoSource(this.source);
+  }
 }

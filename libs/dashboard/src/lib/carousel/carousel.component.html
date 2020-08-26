@@ -9,6 +9,9 @@
     <db-video-title
       [title]="slide.title"
       [content]="slide.content"
+      [source]="slide.url"
+      (video_clicked)="slickModal.slickPause()"
+      (video_closed)="slickModal.slickPlay()"
     >
     </db-video-title>
   </div>

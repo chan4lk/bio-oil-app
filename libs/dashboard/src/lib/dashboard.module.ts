@@ -7,6 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { VideoTitleComponent } from './video-title/video-title.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import {SlickCarouselModule} from "ngx-slick-carousel";
+import { VideoPlayerComponent } from './video-player/video-player.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -16,6 +17,6 @@ import {SlickCarouselModule} from "ngx-slick-carousel";
       { path: '', pathMatch: 'full', component: HomeComponent },
     ]),
   ],
-  declarations: [HomeComponent, SectionComponent, VideoTitleComponent, CarouselComponent],
+  declarations: [HomeComponent, SectionComponent, VideoTitleComponent, CarouselComponent, VideoPlayerComponent],
 })
 export class DashboardModule {}
