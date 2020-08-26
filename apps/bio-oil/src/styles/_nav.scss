@@ -40,3 +40,37 @@
     right: 22px;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nav {
+    height: 84px;
+    margin: -23px;
+
+    #nav-toggle span {
+      left: 20px;
+      top: 45px;
+    }
+
+    #nav-toggle span,
+    #nav-toggle span:before,
+    #nav-toggle span:after {
+      height: 2px;
+      width: 32px;
+    }
+
+    #nav-toggle span:before {
+      top: -10px;
+    }
+
+    #nav-toggle span:after {
+      bottom: -10px;
+    }
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      top: 12px;
+      right: 23px;
+    }
+  }
+}
