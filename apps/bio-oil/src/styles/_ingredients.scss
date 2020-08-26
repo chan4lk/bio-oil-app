@@ -1,23 +1,57 @@
 .ingredients {
   background: $backgroundColor;
   display: flex;
+  .bottle-section {
+    flex: 400;
+
+    .bottle-anim {
+
+      height: 412px;
+
+      display: grid;
+      grid-template: 1fr / 1fr;
+      place-items: center;
+    }
+    .bottle-anim > * {
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+    }
+    .bottle-anim .circles {
+      z-index: 1;
+      height: 25vw;
+      width: 25vw;
+      padding-left: 0vw;
+      .circle {
+        //background: aqua;
+        height: 25vw;
+        width: 25vw;
+        border-radius: 50%;
+        //border: black solid 22px;
+      }
+    }
+    .bottle-anim .img {
+      z-index: 2;
+    }
+  }
   .bottle {
-    height: 40vh;
-    flex: 1;
+    height: 412px;
   }
   .ingredients-items {
-    flex: 1;
+    padding-top: 100px;
+    flex: 248;
     h1 {
-      font-weight: bold;
-      font-size: 15px;
-      line-height: 1.2rem;
+      font-family: "Open Sans SemiBold", SansSerif;
+      font-size: 18px;
+      line-height: 1.5rem;
+      max-width: 248px;
     }
 
     ul {
       list-style: none;
 
       li {
-        font-size: 12px;
+        font-family: "Open Sans SemiBold", SansSerif;
+        font-size: 14px;
         line-height: 1.2rem;
         margin-left: 15px;
       }
