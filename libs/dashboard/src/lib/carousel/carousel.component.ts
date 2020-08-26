@@ -38,28 +38,4 @@ export class CarouselComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addSlide() {
-
-  }
-
-  removeSlide() {
-    this.slides.length = this.slides.length - 1;
-  }
-
-  slickInit(e: SlickEvent) {
-    console.log('slick initialized');
-  }
-
-  breakpoint(e: SlickEvent) {
-    console.log('breakpoint');
-  }
-
-  afterChange(e: SlickEvent) {
-    console.log('afterChange');
-  }
-
-  beforeChange(e: SlickEvent) {
-    console.log('beforeChange');
-  }
-
 }
