@@ -40,8 +40,9 @@
     padding-top: 100px;
     flex: 248;
     h1 {
-      font-family: "Open Sans SemiBold", SansSerif;
-      font-size: 18px;
+      font-family: "Open Sans", SansSerif;
+      font-weight: 700;
+      font-size: 16px;
       line-height: 1.5rem;
       max-width: 248px;
     }
@@ -50,7 +51,8 @@
       list-style: none;
 
       li {
-        font-family: "Open Sans SemiBold", SansSerif;
+        font-family: "Open Sans", SansSerif;
+        font-weight: 600;
         font-size: 14px;
         line-height: 1.2rem;
         margin-left: 15px;
