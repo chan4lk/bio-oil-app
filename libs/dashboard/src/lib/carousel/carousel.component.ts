@@ -33,8 +33,6 @@ export class CarouselComponent implements OnInit {
     dots: true,
     autoplay: true,
     mobileFirst: true,
-    centerMode: true,
-    centerPadding: '20%',
   };
 
   ngOnInit(): void {
