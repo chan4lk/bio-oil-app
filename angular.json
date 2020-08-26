@@ -25,8 +25,15 @@
               "apps/bio-oil/src/favicon.ico",
               "apps/bio-oil/src/assets"
             ],
-            "styles": ["apps/bio-oil/src/styles.scss"],
-            "scripts": []
+            "styles": [
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss",
+              "apps/bio-oil/src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -83,7 +90,10 @@
               "apps/bio-oil/tsconfig.app.json",
               "apps/bio-oil/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/bio-oil/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/bio-oil/**/*"
+            ]
           }
         },
         "test": {
@@ -118,8 +128,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/bio-oil-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/bio-oil-e2e/**/*"]
+            "tsConfig": [
+              "apps/bio-oil-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/bio-oil-e2e/**/*"
+            ]
           }
         }
       }
@@ -137,7 +152,10 @@
               "libs/dashboard/tsconfig.lib.json",
               "libs/dashboard/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/dashboard/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/dashboard/**/*"
+            ]
           }
         },
         "test": {
