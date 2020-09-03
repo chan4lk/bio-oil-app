@@ -5,11 +5,21 @@
     <title>Bio-Oil®</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/bio-oil-app/assets/images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-50879936-6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-50879936-6');
+    </script>
   </head>
   <body>
     <bio-oil-root></bio-oil-root>
