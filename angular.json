@@ -63,6 +63,34 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "github": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/bio-oil/src/environments/environment.ts",
+                  "with": "apps/bio-oil/src/environments/environment.github.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
             }
           }
         },
@@ -90,10 +118,7 @@
               "apps/bio-oil/tsconfig.app.json",
               "apps/bio-oil/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/bio-oil/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/bio-oil/**/*"]
           }
         },
         "test": {
@@ -128,13 +153,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/bio-oil-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/bio-oil-e2e/**/*"
-            ]
+            "tsConfig": ["apps/bio-oil-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/bio-oil-e2e/**/*"]
           }
         }
       }
@@ -152,10 +172,7 @@
               "libs/dashboard/tsconfig.lib.json",
               "libs/dashboard/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/dashboard/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/dashboard/**/*"]
           }
         },
         "test": {
