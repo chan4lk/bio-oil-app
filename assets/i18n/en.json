@@ -40,5 +40,13 @@
     "CONTENT_10": "We all have that moment when after getting our brows down, the skin around our eyebrows are red and there are even small bumps from the threading.<br>Bio-oil will is made to soothe skin and redness so perfect to apply after you've got them done. Top tip: use some aloe vera to calm the irritation and then a swipe of Bio-oil.",
     "TITLE_11": "",
     "CONTENT_11": ""
+  },
+  "CONSENT": {
+    "MESSAGE_PART_1": "This site uses cookies as described in our",
+    "MESSAGE_PART_2": "privacy policy",
+    "MESSAGE_PART_3": "you agree to the use of cookies, please click accept.",
+    "ACCEPT": "Accept",
+    "POLICY_TITLE": "Privacy policy",
+    "POLICY_STATEMENT": "In order to display this website correctly on your device we use your browser details. Only if you accept our use of cookies, will we place small data files on your device that enable us to remember your location, actions and preferences so that we can enhance your user experience. Other than for the above uses, we will not share your data with third parties, unless required by law."
   }
 }
