@@ -1,0 +1,115 @@
+.bo--notification-sheet--container {
+  position: fixed;
+  overflow-y: hidden;
+  z-index: 40;
+  top: 20%;
+  bottom: 20%;
+  left: 0;
+}
+
+.bo--notification-sheet--container {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.bo--notification-sheet {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.bo--notification-sheet {
+  padding: 30px;
+  font-size: 14px;
+}
+
+.bo--notification-sheet--content {
+  position: relative;
+  line-height: 1rem;
+}
+.bo--notification-sheet--close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+  cursor: pointer;
+  height: 16px;
+}
+.bo--notification-sheet--close img {
+  width: 16px;
+}
+
+.bo--notification-text {
+  h5 {
+    font-weight: 700;
+  }
+}
+
+.bo--notification-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-size: 14px;
+  padding: 0 80px;
+  height: 90px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.bo--notification-banner--content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.bo--notification-banner--content {
+  max-width: 800px;
+  width: 100%;
+  line-height: 1rem;
+}
+.bo--notification-banner--accept {
+  margin-left: 30px;
+}
+
+.bo--notification-banner a {
+  color: black;
+  text-decoration: underline;
+}
+.bo--notification-banner--accept {
+  padding: 10px 20px;
+  color: black;
+  border: black solid 1px;
+  text-decoration: none !important;
+  white-space: nowrap;
+  align-items: flex-end;
+  vertical-align: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .bo--notification-sheet--container {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  .bo--notification-sheet {
+    font-size: 10px;
+  }
+
+  .bo--notification-banner {
+    padding: 0 23px;
+    height: 60px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .bo--notification-sheet--container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

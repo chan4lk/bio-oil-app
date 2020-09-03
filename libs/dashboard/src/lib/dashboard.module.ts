@@ -8,6 +8,7 @@ import { VideoTitleComponent } from './video-title/video-title.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import {SlickCarouselModule} from "ngx-slick-carousel";
 import { VideoPlayerComponent } from './video-player/video-player.component';
+import { ConsentNotificationComponent } from './consent-notification/consent-notification.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -17,6 +18,6 @@ import { VideoPlayerComponent } from './video-player/video-player.component';
       { path: '', pathMatch: 'full', component: HomeComponent },
     ]),
   ],
-  declarations: [HomeComponent, SectionComponent, VideoTitleComponent, CarouselComponent, VideoPlayerComponent],
+  declarations: [HomeComponent, SectionComponent, VideoTitleComponent, CarouselComponent, VideoPlayerComponent, ConsentNotificationComponent],
 })
 export class DashboardModule {}

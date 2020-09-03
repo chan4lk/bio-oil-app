@@ -1,0 +1,47 @@
+<div *ngIf="showBanner" class="bo--notification-banner">
+  <div class="bo--notification-banner--content">
+    <div class="bo--notification-banner--text">
+      {{ 'CONSENT.MESSAGE_PART_1' | translate }}
+      <a
+        href="#"
+        class="bo--notification-sheet--open"
+        (click)="showPoliciy = true"
+        >{{ 'CONSENT.MESSAGE_PART_2' | translate }}</a
+      >
+      {{ 'CONSENT.MESSAGE_PART_3' | translate }}
+    </div>
+    <a
+      rel="nofollow"
+      class="bo--notification-banner--accept"
+      href="#"
+      (click)="accept()"
+    >
+      {{ 'CONSENT.ACCEPT' | translate }}
+    </a>
+  </div>
+</div>
+<div
+  class="bo--notification-sheet--container"
+  id="open-policy-sheet"
+  *ngIf="showPoliciy && showBanner"
+>
+  <div class="bo--notification-sheet">
+    <div class="bo--notification-sheet--content">
+      <div class="bo--notification-text">
+        <h5>{{ 'CONSENT.POLICY_TITLE' | translate }}</h5>
+        <p>
+          {{ 'CONSENT.POLICY_STATEMENT' | translate }}
+        </p>
+      </div>
+
+      <a
+        rel="nofollow"
+        class="bo--notification-sheet--close ltr"
+        href="#"
+        (click)="showPoliciy = false"
+      >
+        <img src="assets/images/close-24px-dark.svg" />
+      </a>
+    </div>
+  </div>
+</div>
